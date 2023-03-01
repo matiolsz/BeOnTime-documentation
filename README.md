@@ -85,11 +85,11 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 
 ## Use BeOnTime <a name="use-beontime"></a>
 
-#### 1. Konsultant <a name="consultant"></a>
+### 1. Konsultant <a name="consultant"></a>
 
 - Zarejestruj swoj czas pracy<a name="c1"></a>
 
-#### 2. Manager <a name="manager"></a>
+### 2. Manager <a name="manager"></a>
 
 - Dodaj Work Order<a name="m1"></a>
 - Edytuj Work Order<a name="m2"></a>
@@ -98,7 +98,7 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 - Wygeneruj raport miesięczny dla konsultanta<a name="m5"></a>
 - Wygeneruj raport dla projektu<a name="m6"></a>
 
-#### 3. Administrator <a name="administrator"></a>
+### 3. Administrator <a name="administrator"></a>
 
 - Stworz departament<a name="a1"></a>
 - Dodaj projekt do departamentu<a name="a2"></a>
@@ -106,7 +106,7 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 - Stworz managera<a name="a4"></a>
 - Deaktywuj konsultanta<a name="a5"></a>
 
-#### 4. FAQ <a name="faq"></a>
+### 4. FAQ <a name="faq"></a>
 
 - Konsultant nie widzi swojego Timesheetu
 <a name="f1"></a>
