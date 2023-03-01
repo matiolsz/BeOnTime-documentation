@@ -40,9 +40,9 @@
 
 ## Getting Started <a name="getting-started"></a>
 
-**BeOnTime** służy do raportowania czasu pracy konsultantów i managerów oraz generowania raportów przedstawiających czas pracy. 
+**BeOnTime** służy do zapisywania czasu pracy konsultantów i managerów oraz generowania raportów przedstawiających czas pracy. 
 
-Rejestrowany czas pracy musi być przyporządkowany do projektu (w którym dany konsultant pracuje).
+Zapisywany czas pracy musi być przyporządkowany do projektu (w którym dany konsultant pracuje).
  Z tego powodu rozróżniamy w aplikacji podział na:
 
 - Departament
