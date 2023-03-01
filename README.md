@@ -18,7 +18,7 @@
     - [Zaakceptuj Timesheet konsultanta](#m4)
     - [Wygeneruj raport miesięczny dla konsultanta](#m5)
     - [Wygeneruj raport dla projektu](#m6)
-    
+
   [3. Administrator](#administrator)
 
     - [Stworz departament](#a1)
@@ -83,11 +83,29 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 
 #### 1. Konsultant <a name="consultant"></a>
 
+- Zarejestruj swoj czas pracy<a name="c1"></a>
+
 #### 2. Manager <a name="manager"></a>
+
+- Dodaj Work Order<a name="m1"></a>
+- Edytuj Work Order<a name="m2"></a>
+- Dodaj konsultanta do Work Order<a name="m3"></a>
+- Zaakceptuj Timesheet konsultanta<a name="m4"></a>
+- Wygeneruj raport miesięczny dla konsultanta<a name="m5"></a>
+- Wygeneruj raport dla projektu<a name="m6"></a>
 
 #### 3. Administrator <a name="administrator"></a>
 
+- Stworz departament<a name="a1"></a>
+- Dodaj projekt do departamentu<a name="a2"></a>
+- Dodaj managera do departamentu<a name="a3"></a>
+- Stworz managera<a name="a4"></a>
+- Deaktywuj konsultanta<a name="a5"></a>
+
 #### 4. FAQ <a name="faq"></a>
+
+- Konsultant nie widzi swojego Timesheetu
+<a name="f1"></a>
 
 ## Dokumentacja Techniczna <a name="technical-documentation"></a>
 
