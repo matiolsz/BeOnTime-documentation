@@ -48,14 +48,15 @@ Aby lepiej zrozumieć jak działa Be On Time zobacz animacje.
 [![BeOnTime Intro](https://github.com/matiolsz/BeOnTime-documentation/blob/main/be.png)](https://youtu.be/lTmHzP2kh4M)
 
 ## Getting Started For Developers <a name="getting-started-for-developers"></a>
-1. Setting up backend
+
+#### 1. Setting up backend
 
 Find backend code [here](https://github.com/Be-Poland/bot_backend).
 
 Under this link you will find steps to set up backend on your machine.
 
 
-2. Setting up frontend
+#### 2. Setting up frontend
 Find frontend code [here](https://github.com/Be-Poland/bot_frontend).
 
 Under this link you will find steps to set up frontend on your machine.
