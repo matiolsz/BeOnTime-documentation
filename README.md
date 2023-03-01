@@ -5,23 +5,31 @@
 - [Getting Started](#getting-started)
 - [Getting Started For Developers](#getting-started-for-developers)
 - [Use BeOnTime](#use-beontime)
-  - [Consultant](#consultant)
-    - Zarejestruj swoj czas pracy
-  - [Manager](#manager)
-    - Dodaj Work Order
-    - Edytuj Work Order
-    - Dodaj konsultanta do Work Order
-    - Zaakceptuj Timesheet konsultanta
-    - Wygeneruj raport miesięczny dla konsultanta
-    - 
-  - [Administrator](#administrator)
-    - Dodaj projekt do departamentu
-    - Dodaj managera do departamentu
-    - Stworz managera
-    - Deaktywuj konsultanta 
 
-  - [FAQ](#faq)
-    - Konsultant nie widzi swojego Timesheetu
+  [1. Konsultant](#consultant)
+    
+    - [Zarejestruj swoj czas pracy](#c1)
+
+  [2. Manager](#manager)
+
+    - [Dodaj Work Order](#m1)
+    - [Edytuj Work Order](#m2)
+    - [Dodaj konsultanta do Work Order](#m3)
+    - [Zaakceptuj Timesheet konsultanta](#m4)
+    - [Wygeneruj raport miesięczny dla konsultanta](#m5)
+    - [Wygeneruj raport dla projektu](#m6)
+    
+  [3. Administrator](#administrator)
+
+    - [Stworz departament](#a1)
+    - [Dodaj projekt do departamentu](#a2)
+    - [Dodaj managera do departamentu](#a3)
+    - [Stworz managera](#a4)
+    - [Deaktywuj konsultanta](#a5) 
+
+  [4. FAQ](#faq)
+
+    - [Konsultant nie widzi swojego Timesheetu](#f1)
     -  
 
 - [Technical Documentation](#technical-documentation)
@@ -73,6 +81,14 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 
 ## Use BeOnTime <a name="use-beontime"></a>
 
-## Technical Documentation <a name="technical-documentation"></a>
+#### 1. Konsultant <a name="consultant"></a>
+
+#### 2. Manager <a name="manager"></a>
+
+#### 3. Administrator <a name="administrator"></a>
+
+#### 4. FAQ <a name="faq"></a>
+
+## Dokumentacja Techniczna <a name="technical-documentation"></a>
 
     
