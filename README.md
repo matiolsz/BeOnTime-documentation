@@ -32,7 +32,11 @@
     - [Konsultant nie widzi swojego Timesheetu](#f1)
     -  
 
-- [Technical Documentation](#technical-documentation)
+- [Dokumentacja Techniczna](#technical-documentation)
+
+  [1. Backend](#be)
+
+  [2. Frontend](#fe)
 
 ## Getting Started <a name="getting-started"></a>
 
@@ -108,5 +112,10 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 <a name="f1"></a>
 
 ## Dokumentacja Techniczna <a name="technical-documentation"></a>
+
+#### 1. Backend <a name="be"></a>
+
 ![Schemat architektury](https://github.com/matiolsz/BeOnTime-documentation/blob/main/schema1.png)
     
+#### 2. Frontend <a name="fe"></a>
+
