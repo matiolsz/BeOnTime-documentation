@@ -50,14 +50,14 @@ Zapisywany czas pracy musi być przyporządkowany do projektu (w którym dany ko
 - Work Order 
 - Timesheet
 
-**Departament** składa się z projektów oraz managerów. 
+**Departament** składa się z projektów oraz managerów. Dodawac oraz edytowac departamenty moze jedynie Administrator.
 
-**Projekty** składają się z Work Orderów, konsultantów i managerów.
+**Projekty** składają się z Work Orderów, konsultantów i managerów. Projekty sa importowane do BeOnTime poprzez integracje z Salesforce. 
 
-**Work Order** określa przedział czasu oraz konsultantów lub managerów należących do Work Orderu.
+**Work Order** określa przedział czasu oraz konsultantów lub managerów należących do Work Orderu. 
 Aby konsultant mógł rejestrować godziny czasu w danym okresie czasu i do danego projektu musi zostać dodany do odpowiedniego Work Orderu(należącego do wspomnianego projektu oraz mieszczącego się we wspomnianym okresie czasu.)
 
-**Timesheet** przedstawia miesięczny wykaz godzin pracy dla danego konsultanta lub managera w Work Orderze, w którym konsultant zarejestrował czas pracy.
+**Timesheet** przedstawia miesięczny wykaz godzin pracy dla danego konsultanta lub managera w Work Orderze, w którym konsultant lub manager zarejestrował czas pracy.
 
 Istnieje podział na trzy role (consultant, manager oraz admin).
 
