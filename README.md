@@ -5,7 +5,7 @@
 
 
 ## Table of Content:
-- [Getting Started(Overview)](#getting-started)
+- [Getting Started (Overview)](#getting-started)
 - [Getting Started For Developers](#getting-started-for-developers)
 - [Use BeOnTime](#use-beontime)
   - [Consultant](#consultant)
@@ -16,7 +16,7 @@
     - bla 
 - [Technical Documentation](#technical-documentation)
 
-## Getting Started(Overview) <a name="getting-started"></a>
+## Getting Started (Overview) <a name="getting-started"></a>
 
 ## Getting Started For Developers <a name="getting-started-for-developers"></a>
 
