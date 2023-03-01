@@ -6,11 +6,24 @@
 - [Getting Started For Developers](#getting-started-for-developers)
 - [Use BeOnTime](#use-beontime)
   - [Consultant](#consultant)
-    - bla
+    - Zarejestruj swoj czas pracy
   - [Manager](#manager)
-    - bla
+    - Dodaj Work Order
+    - Edytuj Work Order
+    - Dodaj konsultanta do Work Order
+    - Zaakceptuj Timesheet konsultanta
+    - Wygeneruj raport miesięczny dla konsultanta
+    - 
   - [Administrator](#administrator)
-    - bla 
+    - Dodaj projekt do departamentu
+    - Dodaj managera do departamentu
+    - Stworz managera
+    - Deaktywuj konsultanta 
+
+  - [FAQ](#faq)
+    - Konsultant nie widzi swojego Timesheetu
+    -  
+
 - [Technical Documentation](#technical-documentation)
 
 ## Getting Started <a name="getting-started"></a>
