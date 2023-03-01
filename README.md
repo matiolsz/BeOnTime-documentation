@@ -113,9 +113,9 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 
 ## Dokumentacja Techniczna <a name="technical-documentation"></a>
 
-#### 1. Backend <a name="be"></a>
+### 1. Backend <a name="be"></a>
 
 ![Schemat architektury](https://github.com/matiolsz/BeOnTime-documentation/blob/main/schema1.png)
     
-#### 2. Frontend <a name="fe"></a>
+### 2. Frontend <a name="fe"></a>
 
