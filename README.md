@@ -51,15 +51,11 @@ Aby lepiej zrozumieć jak działa Be On Time zobacz animacje.
 
 #### 1. Setting up backend
 
-Find backend code [here](https://github.com/Be-Poland/bot_backend).
-
-Under this link you will find steps to set up backend on your machine.
+Pod [tym linkiem](https://github.com/Be-Poland/bot_backend) znajdziesz kod backendowy BeOnTime oraz informacje jak uruchomic aplikacje lokalnie.
 
 
 #### 2. Setting up frontend
-Find frontend code [here](https://github.com/Be-Poland/bot_frontend).
-
-Under this link you will find steps to set up frontend on your machine.
+Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod frontendowy BeOnTime oraz informacje jak uruchomic aplikacje lokalnie.
 
 
 ## Use BeOnTime <a name="use-beontime"></a>
