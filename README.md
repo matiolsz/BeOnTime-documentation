@@ -40,9 +40,9 @@
 
 ## Getting Started <a name="getting-started"></a>
 
-**BeOnTime** służy do zapisywania czasu pracy konsultantów i managerów oraz generowania raportów przedstawiających czas pracy. 
+**BeOnTime** służy do raportowania czasu pracy konsultantów i managerów oraz generowania raportów przedstawiających czas pracy. 
 
-Zapisywany czas pracy musi być przyporządkowany do projektu (w którym dany konsultant pracuje).
+Rejestrowany czas pracy musi być przyporządkowany do projektu (w którym dany konsultant pracuje).
  Z tego powodu rozróżniamy w aplikacji podział na:
 
 - Departament
@@ -50,14 +50,14 @@ Zapisywany czas pracy musi być przyporządkowany do projektu (w którym dany ko
 - Work Order 
 - Timesheet
 
-**Departament** składa się z projektów oraz managerów. Dodawac oraz edytowac departamenty moze jedynie Administrator.
+**Departament** składa się z projektów oraz managerów. 
 
-**Projekty** składają się z Work Orderów, konsultantów i managerów. Projekty sa importowane do BeOnTime poprzez integracje z Salesforce. 
+**Projekty** składają się z Work Orderów, konsultantów i managerów.
 
-**Work Order** określa przedział czasu oraz konsultantów lub managerów należących do Work Orderu. 
+**Work Order** określa przedział czasu oraz konsultantów lub managerów należących do Work Orderu.
 Aby konsultant mógł rejestrować godziny czasu w danym okresie czasu i do danego projektu musi zostać dodany do odpowiedniego Work Orderu(należącego do wspomnianego projektu oraz mieszczącego się we wspomnianym okresie czasu.)
 
-**Timesheet** przedstawia miesięczny wykaz godzin pracy dla danego konsultanta lub managera w Work Orderze, w którym konsultant lub manager zarejestrował czas pracy.
+**Timesheet** przedstawia miesięczny wykaz godzin pracy dla danego konsultanta lub managera w Work Orderze, w którym konsultant zarejestrował czas pracy.
 
 Istnieje podział na trzy role (consultant, manager oraz admin).
 
@@ -74,22 +74,22 @@ Aby lepiej zrozumieć jak działa Be On Time zobacz animacje.
 
 ## Getting Started For Developers <a name="getting-started-for-developers"></a>
 
-### 1. Setting up backend
+#### 1. Setting up backend
 
 Pod [tym linkiem](https://github.com/Be-Poland/bot_backend) znajdziesz kod backendowy BeOnTime oraz informacje jak uruchomic aplikacje lokalnie.
 
 
-### 2. Setting up frontend
+#### 2. Setting up frontend
 Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod frontendowy BeOnTime oraz informacje jak uruchomic aplikacje lokalnie.
 
 
 ## Use BeOnTime <a name="use-beontime"></a>
 
-### 1. Konsultant <a name="consultant"></a>
+#### 1. Konsultant <a name="consultant"></a>
 
 - Zarejestruj swoj czas pracy<a name="c1"></a>
 
-### 2. Manager <a name="manager"></a>
+#### 2. Manager <a name="manager"></a>
 
 - Dodaj Work Order<a name="m1"></a>
 - Edytuj Work Order<a name="m2"></a>
@@ -98,7 +98,7 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 - Wygeneruj raport miesięczny dla konsultanta<a name="m5"></a>
 - Wygeneruj raport dla projektu<a name="m6"></a>
 
-### 3. Administrator <a name="administrator"></a>
+#### 3. Administrator <a name="administrator"></a>
 
 - Stworz departament<a name="a1"></a>
 - Dodaj projekt do departamentu<a name="a2"></a>
@@ -106,16 +106,35 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 - Stworz managera<a name="a4"></a>
 - Deaktywuj konsultanta<a name="a5"></a>
 
-### 4. FAQ <a name="faq"></a>
+#### 4. FAQ <a name="faq"></a>
 
-- Konsultant nie widzi swojego Timesheetu
-<a name="f1"></a>
+- Konsultant nie widzi swojego Timesheetu<a name="f1"></a>
 
 ## Dokumentacja Techniczna <a name="technical-documentation"></a>
 
 ### 1. Backend <a name="be"></a>
 
 ![Schemat architektury](https://github.com/matiolsz/BeOnTime-documentation/blob/main/schema1.png)
+
+#### Schemat Encji
+
+Baza danych sklada sie z trzech schematow:
+
+PROJECT_DB 
+![PROJECT_DB](https://github.com/matiolsz/BeOnTime-documentation/blob/main/Project-db.png)
+
+USER_DB
+![USER_DB](https://github.com/matiolsz/BeOnTime-documentation/blob/main/User-db.png)
+
+TIMESHEET_DB
+![TIMESHEET_DB](https://github.com/matiolsz/BeOnTime-documentation/blob/main/Timesheet-db.png)
+
+
+
+#### Autoryzacja i Uwierzytelnianie
+
+BeOnTime wykorzystuje do autoryzacji i uwierzytelniania Azure Active Directory.
+
     
 ### 2. Frontend <a name="fe"></a>
 
