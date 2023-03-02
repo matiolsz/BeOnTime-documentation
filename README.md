@@ -49,6 +49,7 @@ Rejestrowany czas pracy musi być przyporządkowany do projektu (w którym dany 
 - Projekt
 - Work Order 
 - Timesheet
+- Entry
 
 **Departament** składa się z projektów oraz managerów. 
 
@@ -58,6 +59,8 @@ Rejestrowany czas pracy musi być przyporządkowany do projektu (w którym dany 
 Aby konsultant mógł rejestrować godziny czasu w danym okresie czasu i do danego projektu musi zostać dodany do odpowiedniego Work Orderu(należącego do wspomnianego projektu oraz mieszczącego się we wspomnianym okresie czasu.)
 
 **Timesheet** przedstawia miesięczny wykaz godzin pracy dla danego konsultanta lub managera w Work Orderze, w którym konsultant zarejestrował czas pracy.
+
+**Entry** to ilosc godzin wpisanych do jednego dnia.
 
 Istnieje podział na trzy role (consultant, manager oraz admin).
 
