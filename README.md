@@ -123,13 +123,13 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 
 Baza danych sklada sie z trzech schematow:
 
-PROJECT_DB 
+<p style="text-align: center;">PROJECT_DB</p> 
 ![PROJECT_DB](https://github.com/matiolsz/BeOnTime-documentation/blob/main/Project-db.png)
 
-USER_DB
+<p style="text-align: center;">USER_DB</p>
 ![USER_DB](https://github.com/matiolsz/BeOnTime-documentation/blob/main/User-db.png)
 
-TIMESHEET_DB
+<p style="text-align: center;">TIMESHEET_DB</p>
 ![TIMESHEET_DB](https://github.com/matiolsz/BeOnTime-documentation/blob/main/Timesheet-db.png)
 
 
