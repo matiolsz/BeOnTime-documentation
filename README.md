@@ -115,11 +115,11 @@ Pod [tym linkiem](https://github.com/Be-Poland/bot_frontend) znajdziesz kod fron
 
 ## Dokumentacja Techniczna <a name="technical-documentation"></a>
 
-### 1. Backend <a name="be"></a>
+## 1. Backend <a name="be"></a>
 
 ![Schemat architektury](https://github.com/matiolsz/BeOnTime-documentation/blob/main/schema1.png)
 
-#### Schemat Encji
+### Schemat Encji
 
 Baza danych sklada sie z trzech schematow:
 
@@ -134,10 +134,132 @@ TIMESHEET_DB
 
 
 
-#### Autoryzacja i Uwierzytelnianie
+### Autoryzacja i Uwierzytelnianie
 
 BeOnTime wykorzystuje do autoryzacji i uwierzytelniania Azure Active Directory.
 
     
-### 2. Frontend <a name="fe"></a>
+### REST API
+
+Dostepne zasoby dla BeOnTime dzielimy na ponizsze kontrolery:
+
+- Authentication
+- Departament
+- Manager
+- Project
+- Report
+- Timesheet
+- TimesheetManager
+- User
+- WorkOrder
+
+#### Authentication
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Authentication 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| Sign In | `/authentication/sign-in/{country}` |
+
+#### Departament
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Departament 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| Find All Departments | `/departments` |
+| Find All Managers | `/departments/{uuid}/managers` |
+| Assign Manager | `/departments/{departmentUuid}/managers/{managerUuid}` |
+| Dismiss Manager | `/departments/{departmentUuid}/managers/{managerUuid}` |
+| Find All Projects | `/departments/{uuid}/projects` |
+| Create Department | `/departments` |
+| Update Department | `/departments/{departmentUuid}` |
+| Delete Department | `/departments/{departmentUuid}` |
+| Assign Project | `/departments/{departmentUuid}/projects/{projectName}` |
+| Unassign Project | `/departments/{departmentUuid}/projects/{projectName}` |
+
+#### Manager
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Manager 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| Unassign Manager From Departments | `/managers/{managerUuid}/departments` |
+
+#### Project
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Project 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| Find All Projects For Manager | `/projects` |
+| Find All Projects | `/projects?isAssigned=boolean` |
+| Get Projects From Salesforce | `/projects/salesforce` |
+| Add Project | `/projects` |
+| Update Project | `/projects/{uuid}` |
+| Delete Project | `/projects/{uuid}` |
+
+
+#### Report
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Report 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| Generate Excel Report For User - specified month | `/manager/timesheets/report?userUUid=UUID&month=int&year=int` |
+| Generate Excel Report For Project - specified month| `/manager/timesheets/report?projectName=String&month=int&year=int` |
+| Generate Excel Report For Projects - specified month| `/manager/timesheets/report?projectNames=List<String>&month=int&year=int` |
+| Generate Excel Report for Projects - manual date| `/manager/timesheets/reportreport?projectNames=List<String>&fromDate=LocalDate&toDate=LocalDate` |
+| Generate CSV Report - specified month | `/manager/timesheets/report?month=int&year=int` |
+| Send Reports To Salesforce - specified month | `/manager/timesheets/report/salesforce?month=int&year=int` |
+
+#### Timesheet
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Timesheet 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| Find Timesheet | `/timesheets` |
+| Update Timesheet | `/timesheets` |
+| Create Timesheet | `/timesheets` |
+
+#### TimesheetManager
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera TimesheetManager 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| a | `/manager/timesheets/work-orders` |
+| a | `/manager/timesheets` |
+| a | `/manager/timesheets/burnout` |
+| a | `/manager/timesheets/{uuid}` |
+| a | `/manager/timesheets` |
+| a | `/manager/timesheets/entries` |
+| a | `/manager/timesheets` |
+
+#### User
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera User 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| a | `/users` |
+| a | `/users/email` |
+| a | `/users/{uuid}` |
+| a | `/users` |
+| a | `/users` |
+| a | `/users/status/{userUuid}` |
+| a | `/users/{uuid}/approve` |
+| a | `/users/{uuid}` |
+
+#### WorkOrder
+Ponizsza tabela przedstawia dostepne zasoby dla kontrolera WorkOrder 
+
+| Zasoby | Endpointy |
+| --- | --- |
+| a | `/work-orders/projectUUID` |
+| a | `/work-orders` |
+| a | `/work-orders/{uuid}` |
+| a | `/work-orders/users` |
+| a | `/work-orders/{workOrderUuid}/users/{userUuid}` |
+| a | `/work-orders/{workOrderUuid}/users/{userUuid}` |
+| a | `/work-orders/{workOrderUuid}` |
+| a | `/work-orders/{workOrderUuid}` |
+| a | `/work-orders` |
+| a | `/work-orders/{workOrderUuid}` |
+
+
+## 2. Frontend <a name="fe"></a>
 
