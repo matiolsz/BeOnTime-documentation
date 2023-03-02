@@ -156,14 +156,14 @@ Dostepne zasoby dla BeOnTime dzielimy na ponizsze kontrolery:
 #### Authentication
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Authentication 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | Sign In | `/authentication/sign-in/{country}` |
 
 #### Departament
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Departament 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | Find All Departments | `/departments` |
 | Find All Managers | `/departments/{uuid}/managers` |
@@ -179,14 +179,14 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Departament
 #### Manager
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Manager 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | Unassign Manager From Departments | `/managers/{managerUuid}/departments` |
 
 #### Project
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Project 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | Find All Projects For Manager | `/projects` |
 | Find All Projects | `/projects?isAssigned=boolean` |
@@ -199,7 +199,7 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Project
 #### Report
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Report 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | Generate Excel Report For User - specified month | `/manager/timesheets/report?userUUid=UUID&month=int&year=int` |
 | Generate Excel Report For Project - specified month| `/manager/timesheets/report?projectName=String&month=int&year=int` |
@@ -211,29 +211,29 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Report
 #### Timesheet
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Timesheet 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
-| Find Timesheet | `/timesheets` |
-| Update Timesheet | `/timesheets` |
-| Create Timesheet | `/timesheets` |
+| Find Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` |
+| Update Timesheet | `/timesheets/{uuid}` |
+| Create Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` |
 
 #### TimesheetManager
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera TimesheetManager 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
-| a | `/manager/timesheets/work-orders` |
-| a | `/manager/timesheets` |
-| a | `/manager/timesheets/burnout` |
-| a | `/manager/timesheets/{uuid}` |
-| a | `/manager/timesheets` |
-| a | `/manager/timesheets/entries` |
-| a | `/manager/timesheets` |
+| Find Work Orders For Project - specified month | `/manager/timesheets/work-orders?projectUUid=UUID&month=int&year=int` |
+| Find Timesheets for specified month | `/manager/timesheets?month=int&year=int` |
+| Find Burnout for Project | `/manager/timesheets/burnout?projectName=string` |
+| Update Status Of Timesheet | `/manager/timesheets/{uuid}?status=string` |
+| Update (hasLocationBasedRate) for Timesheet | `/manager/timesheets?workOrderUuid=uuid&hasLocationBasedRate=boolean` |
+| Check if Entries exists  | `/manager/timesheets/entries?workOrderUUID=uuid` |
+| a | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` |
 
 #### User
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera User 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | a | `/users` |
 | a | `/users/email` |
@@ -247,7 +247,7 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera User
 #### WorkOrder
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera WorkOrder 
 
-| Zasoby | Endpointy |
+| Zasoby | Endpoint |
 | --- | --- |
 | a | `/work-orders/projectUUID` |
 | a | `/work-orders` |
