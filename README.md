@@ -228,37 +228,37 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera TimesheetManager
 | Update Status Of Timesheet | `/manager/timesheets/{uuid}?status=string` |
 | Update (hasLocationBasedRate) for Timesheet | `/manager/timesheets?workOrderUuid=uuid&hasLocationBasedRate=boolean` |
 | Check if Entries exists  | `/manager/timesheets/entries?workOrderUUID=uuid` |
-| a | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` |
+| Delete Entries | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` |
 
 #### User
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera User 
 
 | Zasoby | Endpoint |
 | --- | --- |
-| a | `/users` |
-| a | `/users/email` |
-| a | `/users/{uuid}` |
-| a | `/users` |
-| a | `/users` |
-| a | `/users/status/{userUuid}` |
-| a | `/users/{uuid}/approve` |
-| a | `/users/{uuid}` |
+| Find all Users | `/users` |
+| Find User by name | `/users/email` |
+| Find User by UUID | `/users/{uuid}` |
+| Create User | `/users` |
+| Update User's role | `/users/{uuid}?role=string` |
+| Update User's activity | `/users/status/{userUuid}` |
+| Approve User | `/users/{uuid}/approve` |
+| Update User's Country | `/users/{uuid}?country=string` |
 
 #### WorkOrder
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera WorkOrder 
 
 | Zasoby | Endpoint |
 | --- | --- |
-| a | `/work-orders/projectUUID` |
-| a | `/work-orders` |
-| a | `/work-orders/{uuid}` |
-| a | `/work-orders/users` |
-| a | `/work-orders/{workOrderUuid}/users/{userUuid}` |
-| a | `/work-orders/{workOrderUuid}/users/{userUuid}` |
-| a | `/work-orders/{workOrderUuid}` |
-| a | `/work-orders/{workOrderUuid}` |
-| a | `/work-orders` |
-| a | `/work-orders/{workOrderUuid}` |
+| Find Project's Work Orders | `/work-orders/projectUUID?projectUUID=UUID` |
+| Find User's Work Orders - specified month | `/work-orders?userUUid=UUID&month=int&year=int` |
+| Find Work Order By It's UUID| `/work-orders/{uuid}` |
+| Find Project's Work Orders - specified month | `/work-orders/users?projectUUID=UUID&month=int&year=int` |
+| Assign User to Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` |
+| Dismiss User from Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` |
+| Set Work Order's editable field | `/work-orders/{workOrderUuid}?isEditable=boolean` |
+| Update Work Order | `/work-orders/{workOrderUuid}&workOrderUuid=uuid` |
+| Create Work Order | `/work-orders` |
+| Delete Work Order | `/work-orders/{workOrderUuid}` |
 
 
 ## 2. Frontend <a name="fe"></a>
