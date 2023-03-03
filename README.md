@@ -165,35 +165,35 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Departament
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Find All Departments | `/departments` | GET |
-| Find All Managers | `/departments/{uuid}/managers` | GET |
-| Assign Manager | `/departments/{departmentUuid}/managers/{managerUuid}` | POST |
-| Dismiss Manager | `/departments/{departmentUuid}/managers/{managerUuid}` | DELETE |
-| Find All Projects | `/departments/{uuid}/projects` | GET |
-| Create Department | `/departments` | POST |
-| Update Department | `/departments/{departmentUuid}` | PUT |
-| Delete Department | `/departments/{departmentUuid}` | DELETE |
-| Assign Project | `/departments/{departmentUuid}/projects/{projectName}` | POST |
-| Unassign Project | `/departments/{departmentUuid}/projects/{projectName}` | DELETE |
+| [Find All Departments](restapi/department_findAllDepartments) | `/departments` | GET |
+| [Find All Managers](restapi/department_findAllManagers) | `/departments/{uuid}/managers` | GET |
+| [Assign Manager](restapi/department_assignManager) | `/departments/{departmentUuid}/managers/{managerUuid}` | POST |
+| [Dismiss Manager](restapi/department_dismissManager) | `/departments/{departmentUuid}/managers/{managerUuid}` | DELETE |
+| [Find All Projects](restapi/department_findAllProjects) | `/departments/{uuid}/projects` | GET |
+| [Create Department](restapi/department_createDepartment) | `/departments` | POST |
+| [Update Department](restapi/department_updateDepartment) | `/departments/{departmentUuid}` | PUT |
+| [Delete Department](restapi/department_deleteDepartment) | `/departments/{departmentUuid}` | DELETE |
+| [Assign Project](restapi/department_assignProject) | `/departments/{departmentUuid}/projects/{projectName}` | POST |
+| [Unassign Project](restapi/department_unassignProject) | `/departments/{departmentUuid}/projects/{projectName}` | DELETE |
 
 #### Manager
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Manager 
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Unassign Manager From Departments | `/managers/{managerUuid}/departments` | DELETE |
+| [Unassign Manager from Departments](restapi/manager_unassignManagerFromDepartments) | `/managers/{managerUuid}/departments` | DELETE |
 
 #### Project
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Project 
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Find All Projects For Manager | `/projects` | GET |
-| Find All Projects | `/projects?isAssigned=boolean` | GET |
-| Get Projects From Salesforce | `/projects/salesforce` | GET |
-| Add Project | `/projects` | POST |
-| Update Project | `/projects/{uuid}` | PUT |
-| Delete Project | `/projects/{uuid}` | DELETE |
+| [Find Projects for Manager](restapi/project_findProjectForManager) | `/projects` | GET |
+| [Find Projects](restapi/project_findProjects) | `/projects?isAssigned=boolean` | GET |
+| [Get Projects from Salesforce](restapi/project_getProjectsFromSalesforce) | `/projects/salesforce` | GET |
+| [Add Project](restapi/project_addProject) | `/projects` | POST |
+| [Update Project](restapi/project_updateProject) | `/projects/{uuid}` | PUT |
+| [Delete Project](restapi/project_deleteProject) | `/projects/{uuid}` | DELETE |
 
 
 #### Report
@@ -201,64 +201,64 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Report
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Generate Excel Report For User - specified month | `/manager/timesheets/report?userUUid=UUID&month=int&year=int` | GET |
-| Generate Excel Report For Project - specified month| `/manager/timesheets/report?projectName=String&month=int&year=int` | GET |
-| Generate Excel Report For Projects - specified month| `/manager/timesheets/report?projectNames=List<String>&month=int&year=int` | GET |
-| Generate Excel Report for Projects - manual date| `/manager/timesheets/reportreport?projectNames=List<String>&fromDate=LocalDate&toDate=LocalDate` | GET |
-| Generate CSV Report - specified month | `/manager/timesheets/report?month=int&year=int` | GET |
-| Send Reports To Salesforce - specified month | `/manager/timesheets/report/salesforce?month=int&year=int` | POST |
+| [Generate Excel Report For User - specified month](restapi/report_generateExcelReportForUser) | `/manager/timesheets/report?userUUid=UUID&month=int&year=int` | GET |
+| [Generate Excel Report For Project - specified month](restapi/report_generateExcelReportForProject) | `/manager/timesheets/report?projectName=String&month=int&year=int` | GET |
+| [Generate Excel Report For Projects - specified month](restapi/report_generateExcelReportForProjects) | `/manager/timesheets/report?projectNames=List<String>&month=int&year=int` | GET |
+| [Generate Excel Report for Projects - manual date](restapi/report_generateExcelReportForProjectsManualDate) | `/manager/timesheets/reportreport?projectNames=List<String>&fromDate=LocalDate&toDate=LocalDate` | GET |
+| [Generate CSV Report - specified month](restapi/report_generateCSVReport) | `/manager/timesheets/report?month=int&year=int` | GET |
+| [Send Reports To Salesforce - specified month](restapi/report_sendReportsToSalesforce) | `/manager/timesheets/report/salesforce?month=int&year=int` | POST |
 
 #### Timesheet
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Timesheet 
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Find Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` | GET |
-| Update Timesheet | `/timesheets/{uuid}` | PATCH |
-| Create Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` | POST |
+| [Find Timesheet](restapi/timesheet_findTimesheet) | `/timesheets?userUUid=UUID&month=int&year=int` | GET |
+| [Update Timesheet](restapi/timesheet_updateTimesheet) | `/timesheets/{uuid}` | PATCH |
+| [Create Timesheet](restapi/timesheet_createTimesheet) | `/timesheets?userUUid=UUID&month=int&year=int` | POST |
 
 #### TimesheetManager
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera TimesheetManager 
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Find Work Orders For Project - specified month | `/manager/timesheets/work-orders?projectUUid=UUID&month=int&year=int` | GET |
-| Find Timesheets for specified month | `/manager/timesheets?month=int&year=int` | GET |
-| Find Burnout for Project | `/manager/timesheets/burnout?projectName=string` | GET |
-| Update Status Of Timesheet | `/manager/timesheets/{uuid}?status=string` | PATCH |
-| Update (hasLocationBasedRate) for Timesheet | `/manager/timesheets?workOrderUuid=uuid&hasLocationBasedRate=boolean` | PATCH |
-| Check if Entries exists  | `/manager/timesheets/entries?workOrderUUID=uuid` | HEAD |
-| Delete Entries | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` | DELETE |
+| [Find Project's Work Orders - specified month](restapi/timesheetManager_findProjectsWorkOrdersSpecifiedMonth) | `/manager/timesheets/work-orders?projectUUid=UUID&month=int&year=int` | GET |
+| [Find Timesheets for specified month](restapi/timesheetManager_findTimesheetsForSpecifiedMonth) | `/manager/timesheets?month=int&year=int` | GET |
+| [Find Burnout for Project](restapi/timesheetManager_findBurnoutForProject) | `/manager/timesheets/burnout?projectName=string` | GET |
+| [Update Status Of Timesheet](restapi/timesheetManager_updateStatusOfTimesheet) | `/manager/timesheets/{uuid}?status=string` | PATCH |
+| [Update (hasLocationBasedRate) for Timesheet](restapi/timesheetManager_updateHasLocationBasedRateForTimesheet) | `/manager/timesheets?workOrderUuid=uuid&hasLocationBasedRate=boolean` | PATCH |
+| [Check if Entries exists](restapi/timesheetManager_checkIfEntriesExists)  | `/manager/timesheets/entries?workOrderUUID=uuid` | HEAD |
+| [Delete Entries](restapi/timesheetManager_deleteEntries) | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` | DELETE |
 
 #### User
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera User 
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Find all Users | `/users` | GET |
-| Find User by name | `/users/email` | GET |
-| Find User by UUID | `/users/{uuid}` | GET |
-| Create User | `/users` | POST |
-| Update User's role | `/users/{uuid}?role=string` | PATCH |
-| Update User's activity | `/users/status/{userUuid}` | PATCH |
-| Approve User | `/users/{uuid}/approve` | PATCH |
-| Update User's Country | `/users/{uuid}?country=string` | PATCH |
+| [Find all Users](restapi/user_findAllUsers) | `/users` | GET |
+| [Find User by name](restapi/user_findUserByName) | `/users/email` | GET |
+| [Find User by UUID](restapi/user_findUserByUUID) | `/users/{uuid}` | GET |
+| [Create User](restapi/user_createUser) | `/users` | POST |
+| [Update User's role](restapi/user_updateUsersRole) | `/users/{uuid}?role=string` | PATCH |
+| [Update User's activity](restapi/user_updateUsersActivity) | `/users/status/{userUuid}` | PATCH |
+| [Approve User](restapi/user_approveUser) | `/users/{uuid}/approve` | PATCH |
+| [Update User's Country](restapi/user_updateUsersCountry) | `/users/{uuid}?country=string` | PATCH |
 
 #### WorkOrder
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera WorkOrder 
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Find Project's Work Orders | `/work-orders/projectUUID?projectUUID=UUID` | GET |
-| Find User's Work Orders - specified month | `/work-orders?userUUid=UUID&month=int&year=int` | GET |
-| Find Work Order By It's UUID| `/work-orders/{uuid}` | GET |
-| Find Project's Work Orders - specified month | `/work-orders/users?projectUUID=UUID&month=int&year=int` | GET |
-| Assign User to Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` | POST |
-| Dismiss User from Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` | DELETE |
-| Set Work Order's editable field | `/work-orders/{workOrderUuid}?isEditable=boolean` | PATCH |
-| Update Work Order | `/work-orders/{workOrderUuid}&workOrderUuid=uuid` | PUT |
-| Create Work Order | `/work-orders` | POST |
-| Delete Work Order | `/work-orders/{workOrderUuid}` | DELETE |
+| [Find Project's Work Orders](restapi/workOrder_findProjectsWorkOrders) | `/work-orders/projectUUID?projectUUID=UUID` | GET |
+| [Find User's Work Orders - specified month](restapi/workOrder_findUsersWorkOrdersForSpecifiedMonth) | `/work-orders?userUUid=UUID&month=int&year=int` | GET |
+| [Find Work Order By It's UUID](restapi/workOrder_findWorkOrderByItsUUID) | `/work-orders/{uuid}` | GET |
+| [Find Project's Work Orders - specified month](restapi/workOrder_findProjectsWorkOrdersForSpecifiedMonth) | `/work-orders/users?projectUUID=UUID&month=int&year=int` | GET |
+| [Assign User to Work Order](restapi/workOrder_assignUserToWorkOrder) | `/work-orders/{workOrderUuid}/users/{userUuid}` | POST |
+| [Dismiss User from Work Order](restapi/workOrder_dismissUserFromWorkOrder) | `/work-orders/{workOrderUuid}/users/{userUuid}` | DELETE |
+| [Set Work Order's editable field](restapi/workOrder_setWorkOrdersEditableField) | `/work-orders/{workOrderUuid}?isEditable=boolean` | PATCH |
+| [Update Work Order](restapi/workOrder_updateWorkOrder) | `/work-orders/{workOrderUuid}&workOrderUuid=uuid` | PUT |
+| [Create Work Order](restapi/workOrder_createWorkOrder) | `/work-orders` | POST |
+| [Delete Work Order](restapi/workOrder_deleteWorkOrder) | `/work-orders/{workOrderUuid}` | DELETE |
 
 
 ## 2. Frontend <a name="fe"></a>
