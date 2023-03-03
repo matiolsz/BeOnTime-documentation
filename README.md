@@ -158,7 +158,7 @@ Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Authentication
 
 | Zasoby | Endpoint | Request Method |
 | --- | --- | --- |
-| Sign In | `/authentication/sign-in/{country}` | GET |
+| [Sign In](restapi/auth_signIn) | `/authentication/sign-in/{country}` | GET |
 
 #### Departament
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Departament 
