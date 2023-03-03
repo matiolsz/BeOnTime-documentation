@@ -156,109 +156,109 @@ Dostepne zasoby dla BeOnTime dzielimy na ponizsze kontrolery:
 #### Authentication
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Authentication 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Sign In | `/authentication/sign-in/{country}` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Sign In | `/authentication/sign-in/{country}` | GET |
 
 #### Departament
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Departament 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Find All Departments | `/departments` |
-| Find All Managers | `/departments/{uuid}/managers` |
-| Assign Manager | `/departments/{departmentUuid}/managers/{managerUuid}` |
-| Dismiss Manager | `/departments/{departmentUuid}/managers/{managerUuid}` |
-| Find All Projects | `/departments/{uuid}/projects` |
-| Create Department | `/departments` |
-| Update Department | `/departments/{departmentUuid}` |
-| Delete Department | `/departments/{departmentUuid}` |
-| Assign Project | `/departments/{departmentUuid}/projects/{projectName}` |
-| Unassign Project | `/departments/{departmentUuid}/projects/{projectName}` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Find All Departments | `/departments` | GET |
+| Find All Managers | `/departments/{uuid}/managers` | GET |
+| Assign Manager | `/departments/{departmentUuid}/managers/{managerUuid}` | POST |
+| Dismiss Manager | `/departments/{departmentUuid}/managers/{managerUuid}` | DELETE |
+| Find All Projects | `/departments/{uuid}/projects` | GET |
+| Create Department | `/departments` | POST |
+| Update Department | `/departments/{departmentUuid}` | PUT |
+| Delete Department | `/departments/{departmentUuid}` | DELETE |
+| Assign Project | `/departments/{departmentUuid}/projects/{projectName}` | POST |
+| Unassign Project | `/departments/{departmentUuid}/projects/{projectName}` | DELETE |
 
 #### Manager
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Manager 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Unassign Manager From Departments | `/managers/{managerUuid}/departments` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Unassign Manager From Departments | `/managers/{managerUuid}/departments` | DELETE |
 
 #### Project
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Project 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Find All Projects For Manager | `/projects` |
-| Find All Projects | `/projects?isAssigned=boolean` |
-| Get Projects From Salesforce | `/projects/salesforce` |
-| Add Project | `/projects` |
-| Update Project | `/projects/{uuid}` |
-| Delete Project | `/projects/{uuid}` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Find All Projects For Manager | `/projects` | GET |
+| Find All Projects | `/projects?isAssigned=boolean` | GET |
+| Get Projects From Salesforce | `/projects/salesforce` | GET |
+| Add Project | `/projects` | POST |
+| Update Project | `/projects/{uuid}` | PUT |
+| Delete Project | `/projects/{uuid}` | DELETE |
 
 
 #### Report
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Report 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Generate Excel Report For User - specified month | `/manager/timesheets/report?userUUid=UUID&month=int&year=int` |
-| Generate Excel Report For Project - specified month| `/manager/timesheets/report?projectName=String&month=int&year=int` |
-| Generate Excel Report For Projects - specified month| `/manager/timesheets/report?projectNames=List<String>&month=int&year=int` |
-| Generate Excel Report for Projects - manual date| `/manager/timesheets/reportreport?projectNames=List<String>&fromDate=LocalDate&toDate=LocalDate` |
-| Generate CSV Report - specified month | `/manager/timesheets/report?month=int&year=int` |
-| Send Reports To Salesforce - specified month | `/manager/timesheets/report/salesforce?month=int&year=int` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Generate Excel Report For User - specified month | `/manager/timesheets/report?userUUid=UUID&month=int&year=int` | GET |
+| Generate Excel Report For Project - specified month| `/manager/timesheets/report?projectName=String&month=int&year=int` | GET |
+| Generate Excel Report For Projects - specified month| `/manager/timesheets/report?projectNames=List<String>&month=int&year=int` | GET |
+| Generate Excel Report for Projects - manual date| `/manager/timesheets/reportreport?projectNames=List<String>&fromDate=LocalDate&toDate=LocalDate` | GET |
+| Generate CSV Report - specified month | `/manager/timesheets/report?month=int&year=int` | GET |
+| Send Reports To Salesforce - specified month | `/manager/timesheets/report/salesforce?month=int&year=int` | POST |
 
 #### Timesheet
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera Timesheet 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Find Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` |
-| Update Timesheet | `/timesheets/{uuid}` |
-| Create Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Find Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` | GET |
+| Update Timesheet | `/timesheets/{uuid}` | PATCH |
+| Create Timesheet | `/timesheets?userUUid=UUID&month=int&year=int` | POST |
 
 #### TimesheetManager
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera TimesheetManager 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Find Work Orders For Project - specified month | `/manager/timesheets/work-orders?projectUUid=UUID&month=int&year=int` |
-| Find Timesheets for specified month | `/manager/timesheets?month=int&year=int` |
-| Find Burnout for Project | `/manager/timesheets/burnout?projectName=string` |
-| Update Status Of Timesheet | `/manager/timesheets/{uuid}?status=string` |
-| Update (hasLocationBasedRate) for Timesheet | `/manager/timesheets?workOrderUuid=uuid&hasLocationBasedRate=boolean` |
-| Check if Entries exists  | `/manager/timesheets/entries?workOrderUUID=uuid` |
-| Delete Entries | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Find Work Orders For Project - specified month | `/manager/timesheets/work-orders?projectUUid=UUID&month=int&year=int` | GET |
+| Find Timesheets for specified month | `/manager/timesheets?month=int&year=int` | GET |
+| Find Burnout for Project | `/manager/timesheets/burnout?projectName=string` | GET |
+| Update Status Of Timesheet | `/manager/timesheets/{uuid}?status=string` | PATCH |
+| Update (hasLocationBasedRate) for Timesheet | `/manager/timesheets?workOrderUuid=uuid&hasLocationBasedRate=boolean` | PATCH |
+| Check if Entries exists  | `/manager/timesheets/entries?workOrderUUID=uuid` | HEAD |
+| Delete Entries | `/manager/timesheets?userUUid=UUID&workOrderUuid=uuid&start=LocalDate&end=LocalDate&projectName=string` | DELETE |
 
 #### User
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera User 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Find all Users | `/users` |
-| Find User by name | `/users/email` |
-| Find User by UUID | `/users/{uuid}` |
-| Create User | `/users` |
-| Update User's role | `/users/{uuid}?role=string` |
-| Update User's activity | `/users/status/{userUuid}` |
-| Approve User | `/users/{uuid}/approve` |
-| Update User's Country | `/users/{uuid}?country=string` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Find all Users | `/users` | GET |
+| Find User by name | `/users/email` | GET |
+| Find User by UUID | `/users/{uuid}` | GET |
+| Create User | `/users` | POST |
+| Update User's role | `/users/{uuid}?role=string` | PATCH |
+| Update User's activity | `/users/status/{userUuid}` | PATCH |
+| Approve User | `/users/{uuid}/approve` | PATCH |
+| Update User's Country | `/users/{uuid}?country=string` | PATCH |
 
 #### WorkOrder
 Ponizsza tabela przedstawia dostepne zasoby dla kontrolera WorkOrder 
 
-| Zasoby | Endpoint |
-| --- | --- |
-| Find Project's Work Orders | `/work-orders/projectUUID?projectUUID=UUID` |
-| Find User's Work Orders - specified month | `/work-orders?userUUid=UUID&month=int&year=int` |
-| Find Work Order By It's UUID| `/work-orders/{uuid}` |
-| Find Project's Work Orders - specified month | `/work-orders/users?projectUUID=UUID&month=int&year=int` |
-| Assign User to Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` |
-| Dismiss User from Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` |
-| Set Work Order's editable field | `/work-orders/{workOrderUuid}?isEditable=boolean` |
-| Update Work Order | `/work-orders/{workOrderUuid}&workOrderUuid=uuid` |
-| Create Work Order | `/work-orders` |
-| Delete Work Order | `/work-orders/{workOrderUuid}` |
+| Zasoby | Endpoint | Request Method |
+| --- | --- | --- |
+| Find Project's Work Orders | `/work-orders/projectUUID?projectUUID=UUID` | GET |
+| Find User's Work Orders - specified month | `/work-orders?userUUid=UUID&month=int&year=int` | GET |
+| Find Work Order By It's UUID| `/work-orders/{uuid}` | GET |
+| Find Project's Work Orders - specified month | `/work-orders/users?projectUUID=UUID&month=int&year=int` | GET |
+| Assign User to Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` | POST |
+| Dismiss User from Work Order | `/work-orders/{workOrderUuid}/users/{userUuid}` | DELETE |
+| Set Work Order's editable field | `/work-orders/{workOrderUuid}?isEditable=boolean` | PATCH |
+| Update Work Order | `/work-orders/{workOrderUuid}&workOrderUuid=uuid` | PUT |
+| Create Work Order | `/work-orders` | POST |
+| Delete Work Order | `/work-orders/{workOrderUuid}` | DELETE |
 
 
 ## 2. Frontend <a name="fe"></a>
