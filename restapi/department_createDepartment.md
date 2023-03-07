@@ -34,6 +34,10 @@ create() jest uzywana do tworzenia departamentu.
 `sec-ch-ua-mobile: ?0`  
 `sec-ch-ua-platform: "Windows"`  
 
+#### Przyklad body:  
+
+`{uuid: "5c29621e-693c-4e73-a88d-30480b8cbb19", name: "TestDepartment", salesforceEnabled: false}`  
+
 #### Przyklad odpowiedzi:
 
 `brak`
