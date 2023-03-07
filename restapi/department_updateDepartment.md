@@ -11,7 +11,7 @@ update() jest uzywana do tworzenia departamentu.
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
 | departmentDTO | DepartmentDTO | yes | @RequestBody - Department object |
-| departmentUuid | UUID | yes | Department UUID, ktory chcemy zmienic |
+| departmentUuid | UUID | yes | UUID departamentu, ktory chcemy zmienic |
 
 #### Przyklad zadania:
 
