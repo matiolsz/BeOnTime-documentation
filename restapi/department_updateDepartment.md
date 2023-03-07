@@ -6,7 +6,7 @@ Wszystkie operacje wykonywane na departamentach wymagaja roli **admin**.
 
 ### update()
 
-update() jest uzywana do tworzenia departamentu.
+update() jest uzywana do uaktualnienia departamentu.
 
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
