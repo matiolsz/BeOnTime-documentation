@@ -1,7 +1,7 @@
 
 ## Departament
 
-Department jest zlozony z projektow.  
+Departament jest zlozony z projektow oraz managerow.
 Wszystkie operacje wykonywane na departamentach wymagaja roli **admin**.  
 
 ### findAll()
