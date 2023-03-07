@@ -10,7 +10,7 @@ update() jest uzywana do uaktualnienia departamentu.
 
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
-| departmentDTO | DepartmentDTO | yes | @RequestBody - Department object |
+| departmentDTO | DepartmentDTO | yes | Department object - @RequestBody |
 | departmentUuid | UUID | yes | UUID departamentu, ktory chcemy zmienic |
 
 #### Przyklad zadania:
