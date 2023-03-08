@@ -4,7 +4,7 @@ Projekty naleza do danego departamentu. Sa importowane do BeOnTime przez integra
 
 ### findAll()
 
-findAll() jest uzywana w celu znalezienia projektow, ktore nie sa przypisane do departamentu. 
+findAll() jest uzywana w celu znalezienia projektow, ktore nie sa przypisane do departamentu. Wymagana jest rola admina.
 
 #### Przyklad zadania:
 
