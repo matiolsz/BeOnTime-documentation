@@ -11,7 +11,7 @@ assignManager() jest uzywana do przypisania managera (o podanym uuid) do departa
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
 | departmentUuid | UUID | yes | UUID departamentu, do ktorego, chcemy przyporzadkowac managera |
-| managerUuid | UUID | yes | UUID managera, ktorego, chcemy przypisac| 
+| managerUuid | UUID | yes | UUID managera, ktorego chcemy przypisac| 
 
 #### Przyklad zadania:
 
