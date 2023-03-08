@@ -11,7 +11,7 @@ unassignProject() jest uzywana do usuniecia projektu (o podanej nazwie) z depart
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
 | departmentUuid | UUID | yes | UUID departamentu, do ktorego, chcemy przyporzadkowac managera |
-| projectName | String | yes | Nazwa projektu, ktory, chcemy usunac z danego departamentu| 
+| projectName | String | yes | Nazwa projektu, ktory chcemy usunac z danego departamentu| 
 
 #### Przyklad zadania:
 
