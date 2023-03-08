@@ -9,7 +9,7 @@ delete() jest uzywana do usuwania departamentu.
 
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
-| departmentUuid | UUID | yes | UUID of department to delete |
+| departmentUuid | UUID | yes | UUID departamentu do usuniecia |
 
 #### Przyklad zadania:
 
