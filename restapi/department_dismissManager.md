@@ -7,7 +7,7 @@ Wszystkie operacje wykonywane na departamentach wymagaja roli **admin**.
 
 ### dismissManager()
 
-dismissManager() jest uzywana do przypisania managera (o podanym uuid) do departamentu (o podanym uuid).
+dismissManager() jest uzywana do usuniecia managera (o podanym uuid) z departamentu (o podanym uuid).
 
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
