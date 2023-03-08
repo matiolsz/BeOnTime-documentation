@@ -10,7 +10,7 @@ assignProject() jest uzywana do przypisania projektu (o podanej nazwie) do depar
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
 | departmentUuid | UUID | yes | UUID departamentu, do ktorego, chcemy przyporzadkowac managera |
-| projectName | String | yes | Nazwa projektu, ktory, chcemy dodac do danego departamentu| 
+| projectName | String | yes | Nazwa projektu, ktory chcemy dodac do danego departamentu| 
 
 #### Przyklad zadania:
 
