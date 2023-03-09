@@ -4,7 +4,7 @@ BeOnTime umozliwia generowanie raportow, ktore zawieraja informacje na temat cza
 
 ### generateReport()
 
-generateReport() sluzy do wygenerowania raportu EXCEL. Raport ten zawiera informacje o czasie pracy wszystkich uzytkowanikow w podanym miesiacu. 
+generateReport() sluzy do wygenerowania raportu EXCEL. Raport ten zawiera informacje o czasie pracy wszystkich uzytkowanikow w danym miesiacu oraz danych projektach. 
 
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
