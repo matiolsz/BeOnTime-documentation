@@ -1,6 +1,6 @@
 ## Project
 
-Projekty naleza do danego departamentu. Sa importowane do BeOnTime przez integracje z Salesforcem. 
+Projekty naleza do departamentu. Sa importowane do BeOnTime przez integracje z Salesforcem. 
 
 ### findAll()
 
