@@ -11,9 +11,8 @@ update() zmienia i zwraca timesheet dla danego uzytkownika w danym miesiacu.
 
 |Attribute|	Type|	Required|	Description|
 |---|---|---|---|
-| userUuid | UUID | yes | @RequestParam |
-| month | int | yes | @RequestParam |
-| year | int | yes | @RequestParam |
+| Uuid | UUID | yes | @PathVariable |
+| entryDTOs | List<EntryDTO> | yes | @RequestBody |
 
 #### Przyklad zadania:
 
@@ -33,7 +32,7 @@ update() zmienia i zwraca timesheet dla danego uzytkownika w danym miesiacu.
 `Referer: http://localhost:4200/`  
 `Sec-Fetch-Dest: empty`  
 `Sec-Fetch-Mode: cors`  
-`Sec-Fetch-Site: same-site
+`Sec-Fetch-Site: same-site`  
 `User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36`  
 `sec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"`  
 `sec-ch-ua-mobile: ?0`  
