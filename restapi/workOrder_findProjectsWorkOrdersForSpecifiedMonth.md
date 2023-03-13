@@ -17,7 +17,7 @@ Wymagana rola : consultant lub manager.
 
 #### Przyklad zadania:
 
-`GET /manager/timesheets/work-orders?projectUuid=d4952234-4285-11ea-91b6-0242ac150002&month=3&year=2023 HTTP/1.1`  
+`GET work-orders/users?projectUuid=d4952234-4285-11ea-91b6-0242ac150002&month=3&year=2023 HTTP/1.1`  
 `Accept: application/json, text/plain, */*`  
 `Accept-Encoding: gzip, deflate, br`  
 `Accept-Language: pl-PL,pl;q=0.9`  
@@ -40,4 +40,4 @@ Wymagana rola : consultant lub manager.
 
 #### Przyklad odpowiedzi
 
-`[{"uuid":"760cc47a-0445-44d0-aedc-d7dd3fad7e68","code":"wotest","maxHours":184.0,"hasLocationBasedRate":false,"capacity":666.0,"epv":null,"mbm":null,"users":[{"uuid":"28dcbd9c-bc1d-11ed-afa1-0242ac120002","email":"m.olszanka@be-tse.com","firstName":"Mateusz","lastName":"Olszanka","onSite":null,"offSite":80.0}]}]`
+`[{"uuid":"760cc47a-0445-44d0-aedc-d7dd3fad7e68","maxHours":184.0,"code":"wotest","hasLocationBasedRate":false,"startDate":null,"endDate":null,"comment":null,"capacity":666,"users":[{"uuid":"28dcbd9c-bc1d-11ed-afa1-0242ac120002","firstName":"Mateusz","lastName":"Olszanka","email":"m.olszanka@be-tse.com"}],"epvCode":null,"mbmCode":null,"editable":false}]`
